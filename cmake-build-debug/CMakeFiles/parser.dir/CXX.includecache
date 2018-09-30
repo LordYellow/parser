@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/yellow/Documents/github/parser/header/././debug.hpp
+string
+-
+iostream
+-
+
+/Users/yellow/Documents/github/parser/header/./definitions.hpp
+./debug.hpp
+/Users/yellow/Documents/github/parser/header/././debug.hpp
+
+/Users/yellow/Documents/github/parser/header/parser.hpp
+./definitions.hpp
+/Users/yellow/Documents/github/parser/header/./definitions.hpp
+fstream
+-
+unordered_map
+-
+
+/Users/yellow/Documents/github/parser/source/parser.cpp
+../header/parser.hpp
+/Users/yellow/Documents/github/parser/header/parser.hpp
+algorithm
+-
+regex
+-
+
